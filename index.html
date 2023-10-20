@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback Function</title>
+    <script src="callback.js" defer></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .loader {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        border: 10px solid;
+        box-sizing: border-box;
+        animation: animloader 1s linear infinite alternate;
+      }
+      @keyframes animloader {
+        0% {
+          border-color: black rgba(255, 255, 255, 0) rgba(255, 255, 255, 0)
+            rgba(255, 255, 255, 0);
+        }
+        33% {
+          border-color: black black rgba(255, 255, 255, 0)
+            rgba(255, 255, 255, 0);
+        }
+        66% {
+          border-color: black black black rgba(255, 255, 255, 0);
+        }
+        100% {
+          border-color: black black black black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span class="loader"></span>
+  </body>
+</html>
